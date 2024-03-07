@@ -1,0 +1,17 @@
+.nosotros .contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.nosotros .contenido img {
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+    .nosotros .contenido {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}

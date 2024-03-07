@@ -1,0 +1,76 @@
+.blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .blog {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.post {
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.post .fecha {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.post .imagen {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.post .contenido {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post .contenido h3 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin: 0;
+    flex-grow: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.post .resumen {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-size: 1.8rem;
+}
+
+.post .texto {
+    white-space: pre-wrap;
+}
+
+.post .resumen, .post .texto {
+    margin: 0;
+}
+
+.post .enlace {
+    display: block;
+    width: 100%;
+}

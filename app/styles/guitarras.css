@@ -1,0 +1,131 @@
+.guitarras-grid {
+    display: grid;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .guitarras-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .guitarras-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.guitarra {
+    display: grid;
+    grid-template-rows: 1/3fr 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 70rem;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .guitarra {
+        grid-template-rows: unset;
+        grid-template-columns: 2fr 3fr;
+    }
+}
+
+.guitarra img {
+    border-radius: 5rem;
+}
+
+.guitarra .contenido {
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .guitarra .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
+.guitarra .contenido h3, .contenido-guitarra h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.guitarra .descripcion {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    font-size: 1.8rem;
+}
+
+.guitarra .precio {
+    color: var(--primary);
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 900;
+}
+
+.my-3{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* .animation {
+    animation-timeline: view(block 100% 5%);
+
+    animation-name: grow;
+    animation-fill-mode: both;
+    animation-duration: 3ms; 
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes grow {
+    from {
+        translate: 0 100px;
+        opacity: .5;
+    }
+
+    to {
+        translate: 0 0;
+        opacity: 1;
+    }
+} */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.formulario select {
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid var(--black);
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.formulario input[type="submit"] {
+    margin-top: 3rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 1.4rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: var(--primary);
+}
