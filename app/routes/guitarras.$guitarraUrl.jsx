@@ -62,7 +62,9 @@ function Guitarras() {
             />
             <div className="contenido-guitarra">
                 <h3>{nombre}</h3>
-                <p className="texto">{descripcion[0]?.children[0].text}</p>
+                <p className="texto">{descripcion.map(texto => (
+                  texto.children[0].text === '' ? "\n\n" : texto.children[0].text
+                ))}</p>
                 <p className="precio">${precio}</p>
 
                 <form onSubmit={handleSubmit} className="formulario">

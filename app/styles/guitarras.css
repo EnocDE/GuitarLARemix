@@ -63,6 +63,10 @@
     font-size: 1.8rem;
 }
 
+.guitarra .texto {
+  white-space: pre-wrap;
+}
+
 .guitarra .precio {
     color: var(--primary);
     font-size: 4rem;
@@ -74,27 +78,6 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-
-/* .animation {
-    animation-timeline: view(block 100% 5%);
-
-    animation-name: grow;
-    animation-fill-mode: both;
-    animation-duration: 3ms; 
-    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-@keyframes grow {
-    from {
-        translate: 0 100px;
-        opacity: .5;
-    }
-
-    to {
-        translate: 0 0;
-        opacity: 1;
-    }
-} */
 
 .formulario{
     display: flex;
