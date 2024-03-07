@@ -63,7 +63,7 @@ function Guitarras() {
             <div className="contenido-guitarra">
                 <h3>{nombre}</h3>
                 <p className="texto">{descripcion[0]?.children[0].text}</p>
-                <p className="precio">{precio}</p>
+                <p className="precio">${precio}</p>
 
                 <form onSubmit={handleSubmit} className="formulario">
                     <label htmlFor="cantidad">Cantidad</label>
